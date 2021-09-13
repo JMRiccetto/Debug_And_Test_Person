@@ -13,9 +13,21 @@ namespace Tests
         }
 
         [Test]
-        public void Test1() // Cambiá el nombre para indicar qué estás probando
+        public void SinGuionNiPunto()
         {
-            // Insertá tu código  de pruebaaquí
+            Person mary = new Person("Mary Jane", "53249395");
+        }
+
+        [Test]
+        public void DigitosExtra()
+        {
+            Person romina = new Person("Romina Suárez", "5.324.93956-5");
+        }
+
+        [Test]
+        public void Estandar()
+        {
+            Person dante = new Person("Dante Alighieri", "5.324.939-5");
         }
     }
 }
